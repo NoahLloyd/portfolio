@@ -1,0 +1,93 @@
+.exercises {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.exercise {
+  width: calc(100%-2rem);
+  background-color: #d3d3d3;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+}
+.exercise--name {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.exercise--type {
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  margin-right: 4vw;
+}
+.exercise--factors,
+.exercise--goals {
+  margin: 0.5rem 0 0 0;
+}
+.exercise--goals__title {
+  margin: 2rem 0 0 0;
+  font-size: 1.3rem;
+}
+.exercise--goal__number {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-right: 0.3rem;
+}
+.exercise--amount {
+  position: absolute;
+  font-weight: 900;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  color: white;
+  background-color: #3d3d3d;
+  width: 4.5rem;
+  height: 100%;
+  line-height: 4.4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.status {
+  width: 65%;
+}
+@media (max-width: 1180px) {
+  .exercises {
+    grid-template-columns: 1fr;
+  }
+  .graphic--container {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 850px) {
+  .exercises {
+    width: 95%;
+  }
+  .exercise--name {
+    font-size: 1.8rem;
+  }
+  .exercise--amount {
+    font-size: 2.2rem;
+    height: 4.1rem;
+  }
+}
+@media (max-width: 450px) {
+  .exercises {
+    width: 95%;
+  }
+  .exercise--name {
+    font-size: 0.8rem;
+  }
+  .exercise--amount {
+    font-size: 1rem;
+    height: 2.95rem;
+    width: 3.6rem;
+  }
+}

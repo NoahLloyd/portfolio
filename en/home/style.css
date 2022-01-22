@@ -20,7 +20,6 @@
 .sections--list > a {
     text-decoration: none;
 }
-
 .sections--section {
     width: 80%;
     margin: 2rem auto;
@@ -44,39 +43,40 @@
 }
 
 .programming {
-    background-image: url('./programming.jpg');
+    background-image: url('/home/programming.jpg');
 
 }
 .programming:hover {
     background-position: left 0% bottom 0%;
 }
 .fitness {
-    background-image: url('./fitness.jpg');
+    background-image: url('/home/fitness.jpg');
     background-position: top;
 }
 .fitness:hover {
     background-position: right 0% bottom 0%;
 }
 .music {
-    background-image: url('./music.jpg');
+    background-image: url('/home/music.jpg');
 }
 .music:hover {
     background-position: left 10% bottom 25%;
 }
 .apogee {
-    background-image: url('./apogee.jpg');
+    background-image: url('/home/apogee.jpg');
     background-position: bottom;
 }
 .apogee:hover {
     background-position: right 50% bottom 25%;
 }
 .other {
-    background-image: url('./other.jpg');
+    background-image: url('/home/other.jpg');
     background-position: top;
 }
 .other:hover {
     background-position: left 25% bottom 50%;
 }
+
 @media (max-width: 1180px) {
     .intro {
         flex-direction: column;

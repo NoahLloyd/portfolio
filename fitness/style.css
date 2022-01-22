@@ -1,0 +1,152 @@
+.intro {
+  margin-bottom: 5rem;
+}
+.graphic {
+  margin: 0 5% 0 0;
+}
+.intro--text {
+  margin: auto 0 auto 5%;
+}
+.exercises {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.exercise {
+  width: calc(100%-2rem);
+  background-color: #d3d3d3;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+}
+.exercise--name {
+  font-weight: 800;
+  font-size: 2rem;
+}
+.exercise--more {
+}
+.exercise--type {
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+.exercise--factors,
+.exercise--goals {
+  margin: 0.5rem 0 0 0;
+}
+.exercise--goals__title {
+  margin: 2rem 0 0 0;
+  font-size: 1.3rem;
+}
+.exercise--goal__number {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-right: 0.3rem;
+}
+.exercise--amount {
+  position: absolute;
+  font-weight: 900;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
+  color: white;
+  background-color: #3d3d3d;
+  width: 4.5rem;
+  height: 100%;
+  line-height: 4.4rem;
+  text-align: center;
+}
+.intro2 {
+  margin-top: 10rem !important;
+  flex-direction: row-reverse;
+}
+.run {
+  width: 70%;
+  margin: 1rem auto;
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: black;
+  text-decoration: none;
+  transition: background-color 300ms ease;
+}
+.run:hover {
+  background-color: #bebebe;
+  transition: background-color 300ms ease;
+}
+.run--position {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.run--run {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+.run--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.run--distance {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #00522d;
+  white-space: nowrap;
+}
+.run--distance__unit {
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (max-width: 1180px) {
+  .exercises {
+    grid-template-columns: 1fr;
+  }
+  .run--distance {
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+  .run--position {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 850px) {
+  .exercises {
+    width: 95%;
+  }
+  .exercise--name {
+    font-size: 1.8rem;
+  }
+  .exercise--amount {
+    font-size: 2.2rem;
+    height: 4.1rem;
+  }
+  .run--position {
+    font-size: 1.2rem;
+  }
+  .run--run {
+    font-size: 1.2rem;
+  }
+  .run {
+    width: 100%;
+  }
+  .run--distance {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  .run--info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .run--distance__unit {
+    font-size: 1rem;
+  }
+}

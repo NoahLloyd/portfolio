@@ -2,9 +2,10 @@
 
 :root {
   --blue: #5ffedb;
+  --blue-transparent: #5ffedb66;
   --white: #fff;
   --black: #0f1012;
-  --font: 'Raleway', sans-serif;
+  --font: "Raleway", sans-serif;
 }
 
 * {
@@ -24,15 +25,40 @@ body {
   font-family: var(--font);
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-  display: none;
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black);
+  border: solid 3px transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-right: 5px solid var(--black);
+  border-left: 5px solid var(--black);
+}
+
+html.down ::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--black), var(--blue));
+  box-shadow: 0 0 0 0 var(--blue), 0px 2px 0 -1px var(--blue),
+    0px 4px 0 -2px var(--blue), 0px 6px 0 -3px var(--blue),
+    0px 8px 0 -4px var(--blue), 0px 10px 0 -5px var(--blue),
+    0px 12px 0 -6px var(--blue), 0px 14px 0 -7px var(--blue),
+    0px 16px 0 -8px var(--blue), 0px 18px 0 -9px var(--blue),
+    0px 20px 0 -10px var(--blue);
+} 
+html ::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--blue), var(--black));
+  box-shadow: 0 0 0 0 var(--blue), 0px -2px 0 -1px var(--blue),
+    0px -4px 0 -2px var(--blue), 0px -6px 0 -3px var(--blue),
+    0px -8px 0 -4px var(--blue), 0px -10px 0 -5px var(--blue),
+    0px -12px 0 -6px var(--blue), 0px -14px 0 -7px var(--blue),
+    0px -16px 0 -8px var(--blue), 0px -18px 0 -9px var(--blue),
+    0px -20px 0 -10px var(--blue);
 }
 
 main > * > *:not(.intro--image) {
@@ -42,7 +68,7 @@ main > * > *:not(.intro--image) {
 @keyframes slide-in {
   0% {
     transform: scale(0.7) translateY(-60px);
-  } 
+  }
   100% {
     transform: scale(1) translateY(0);
   }
@@ -87,7 +113,7 @@ main > * > *:not(.intro--image) {
   letter-spacing: 2px;
   opacity: 0.9;
   margin: 0;
-  text-shadow: var(--blue) -5px 2px ;
+  text-shadow: var(--blue) -5px 2px;
 }
 
 .intro--text__subtitle {
@@ -114,7 +140,7 @@ main > * > *:not(.intro--image) {
   text-align: center;
   font-size: 2.5rem;
   margin: 5rem 0 3rem 0;
- }
+}
 
 .about {
   margin: 17rem auto;
@@ -125,11 +151,11 @@ main > * > *:not(.intro--image) {
 .about--content {
   display: flex;
   justify-content: space-between;
-} 
+}
 
 .about--content__image {
   width: 48.5%;
-  background-color: white;
+  object-fit: cover;
 }
 
 .about--content__image::after {
@@ -168,6 +194,7 @@ main > * > *:not(.intro--image) {
   padding: 20px;
   box-shadow: -15px 15px 0 var(--blue);
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .projects--project__left {
@@ -177,7 +204,7 @@ main > * > *:not(.intro--image) {
 }
 
 .projects--project__left > h4 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
   margin: 0;
   opacity: 0.7;
@@ -185,17 +212,25 @@ main > * > *:not(.intro--image) {
 
 .projects--project__left > h3 {
   font-size: 4rem;
-  margin: 0 0 .6rem 0;
+  margin: 0 0 0.6rem 0;
   opacity: 0.9;
 }
 
-.projects--project__left > img {
+.projects--project__left > div > img {
   border-radius: 5px;
 }
 
-.projects--project > p {
+.projects--project p {
   font-size: 1.5rem;
-  margin-bottom: 0;
+  /* position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  margin: .2rem auto;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1rem 1rem; */
 }
 
 .projects--outer-project__icons > a {
@@ -208,7 +243,6 @@ main > * > *:not(.intro--image) {
   margin-top: 10rem;
   margin-bottom: 4rem;
 }
-
 
 .contact--icons {
   display: flex;
@@ -256,10 +290,11 @@ main > * > *:not(.intro--image) {
     margin-top: 5rem;
   }
   .about--content {
-    flex-direction: column
+    flex-direction: column;
   }
   .about--content > * {
-    width: 100%
+    width: 100%;
+    margin-top: 1rem;
   }
 
   .projects--outer-project__tools > * {
@@ -275,5 +310,4 @@ main > * > *:not(.intro--image) {
   .projects--project__explanation {
     font-size: 1.2rem !important;
   }
-
 }

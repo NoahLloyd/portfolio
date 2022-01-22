@@ -1,0 +1,67 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 4rem auto 0 auto;
+  width: 80%;
+  gap: 2rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.video {
+  box-shadow: 2px 2px 15px 5px rgba(53, 53, 53, 0.397);
+  aspect-ratio: 16/9;
+}
+.description {
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+  width: 70%;
+}
+.graphic {
+  margin: 0 !important;
+}
+.song {
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.song::after {
+  content: "";
+  display: block;
+}
+
+@media (max-width: 1180px) {
+  .intro--text {
+    margin: 1rem auto 4rem auto;
+  }
+  .graphic {
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+/* @media (max-width: 850px) {
+
+} */
+@media (min-width: 2200px) {
+  .song {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 3000px) {
+  .song {
+    font-size: 3.2rem;
+  }
+  .description {
+    font-size: 2.2rem;
+  }
+}

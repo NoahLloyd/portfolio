@@ -1,0 +1,12 @@
+<svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="39.5" cy="39.5" r="37.5" fill="#283477"/>
+<rect x="74.7847" y="58.4672" width="11.5974" height="79.0644" transform="rotate(125.995 74.7847 58.4672)" fill="white"/>
+<rect x="73.3496" y="60.4426" width="6.71429" height="79.0644" transform="rotate(125.995 73.3496 60.4426)" fill="#DA1F2B"/>
+<rect width="11.5974" height="77.7502" transform="matrix(0.587713 0.80907 0.80907 -0.587713 4 58.3082)" fill="white"/>
+<rect width="6.71429" height="77.7502" transform="matrix(0.587713 0.80907 0.80907 -0.587713 5.43506 60.2836)" fill="#DA1F2B"/>
+<rect x="30" y="2" width="19" height="77" fill="white"/>
+<rect x="77" y="31" width="19" height="77" transform="rotate(90 77 31)" fill="white"/>
+<rect x="77" y="35" width="11" height="77" transform="rotate(90 77 35)" fill="#DA1F2B"/>
+<rect x="34" y="2" width="11" height="77" fill="#DA1F2B"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 2V0H79V2V77V79H0V77V2ZM77 39.5C77 18.7893 60.2107 2 39.5 2C18.7893 2 2 18.7893 2 39.5C2 60.2107 18.7893 77 39.5 77C60.2107 77 77 60.2107 77 39.5Z" fill="white"/>
+</svg>
